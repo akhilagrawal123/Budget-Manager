@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/addTarget"
+            android:title="Add target"/>
+        <item
+            android:id="@+id/viewSetTarget"
+            android:title="View set target"/>
+        <item
+            android:id="@+id/viewAllCategories"
+            android:title="View all categories"/>
+        <item
+            android:id="@+id/viewMonthlyExpenses"
+            android:title="View Monthly Expenses"/>
+    </group>
+
+</menu>

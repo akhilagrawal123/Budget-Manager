@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.example.budgetmanager">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".BarChart"
+                  android:label="Bar Chart"
+                   android:parentActivityName=".ViewMonthlyExpenses"></activity>
+        <activity
+            android:name=".PieChart"
+            android:label="Pie Chart"
+            android:parentActivityName=".ViewMonthlyExpenses" />
+        <activity
+            android:name=".ListOfExpenses"
+            android:label="List Of Expenses"
+            android:parentActivityName=".ViewMonthlyExpenses" />
+        <activity
+            android:name=".ViewMonthlyExpenses"
+            android:label="View Monthly Expenses"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ViewAllCategories"
+            android:label="View All Categories"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".UpdateTarget_custom" />
+        <activity
+            android:name=".ViewSetTarget"
+            android:label="View Set Target"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".UpdateExpense"
+            android:label="Update Expense"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AddTarget"
+            android:label="Add Target"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AddExpense"
+            android:label="Add Expense"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
